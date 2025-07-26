@@ -1,5 +1,7 @@
 # Hybrid MVC & Clean Code Project
-
+A complete Django aplicaation for ooking an appointment, users can login by token, they don't need to sibmit info for logging in.
+Note that:
+Some parts specially doctors part is incomplete, but updating
 ## Overview
 This project combines **MVC architecture** with **Clean Code principles** to build a maintainable, scalable, and clear web application. It features multiple apps, including `myapp`, `chatapp` (with partial WebSocket), and `otpauth`.
 
