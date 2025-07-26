@@ -1,0 +1,9 @@
+import sys
+
+global STATIC_URL_ROOT 
+global URL_ROOT
+global STATIC_FILES
+STATIC_FILES = 'static/'
+# sys.exit(STATIC_URL_ROOT)
+URL_ROOT = 'http://127.0.0.1:8000/'
+STATIC_URL_ROOT = URL_ROOT + STATIC_FILES

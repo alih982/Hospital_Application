@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Panel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .panel {
+      max-width: 500px;
+      margin: 100px auto;
+      background: white;
+      padding: 40px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    .logout {
+      margin-top: 30px;
+      display: inline-block;
+      background: #e74c3c;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .logout:hover {
+      background: #c0392b;
+    }
+  </style>
+</head>
+<body>
+
+<div class="panel">
+  <h1>Welcome to Your Panel {{ user.username }}</h1>
+  <p>You have successfully verified your phone number.</p>
+
+  <a href="/logout" class="logout">Logout</a>
+</div>
+
+</body>
+</html>

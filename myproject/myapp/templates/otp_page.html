@@ -1,0 +1,16 @@
+<form method="post">
+  {% csrf_token %}
+  <label>Phone:</label>
+  <input type="text" name="phone" value="{{ phone }}" required><br><br>
+
+  {% if show_otp_input %}
+    <label>Enter OTP:</label>
+    <input type="text" name="otp" required><br><br>
+  {% endif %}
+
+  <button type="submit">Submit</button>
+</form>
+
+{% if message %}
+  <p>{{ message }}</p>
+{% endif %}
